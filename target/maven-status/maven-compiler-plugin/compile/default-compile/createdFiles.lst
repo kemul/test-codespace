@@ -1,0 +1,9 @@
+com/crud/config/WebConfig.class
+com/crud/ui/CrudSwingApplication$1.class
+com/crud/ui/CrudSwingApplication.class
+com/crud/example/CrudExample.class
+com/crud/api/UserController.class
+com/crud/WebApplication.class
+com/crud/model/User.class
+com/crud/Main.class
+com/crud/repository/UserRepository.class
