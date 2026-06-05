@@ -230,17 +230,168 @@
             font-size: 0.85em;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
             .main-content {
                 grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                max-width: 100%;
+            }
+
+            header {
+                padding: 15px;
+                margin-bottom: 15px;
             }
 
             h1 {
-                font-size: 1.8em;
+                font-size: 1.5em;
+                margin-bottom: 5px;
+            }
+
+            .subtitle {
+                font-size: 0.9em;
+            }
+
+            .panel {
+                padding: 15px;
+                margin-bottom: 15px;
+            }
+
+            .panel h2 {
+                font-size: 1.2em;
+                margin-bottom: 12px;
+            }
+
+            .form-group {
+                margin-bottom: 10px;
+            }
+
+            label {
+                font-size: 0.85em;
+                margin-bottom: 3px;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            input[type="number"],
+            select {
+                padding: 8px 10px;
+                font-size: 16px;
+            }
+
+            button {
+                padding: 10px 15px;
+                font-size: 0.95em;
+            }
+
+            .button-group {
+                grid-template-columns: 1fr 1fr;
+                gap: 8px;
+            }
+
+            .btn-primary {
+                grid-column: 1 / -1;
+            }
+
+            table {
+                font-size: 0.85em;
+                margin-top: 10px;
+            }
+
+            th, td {
+                padding: 8px;
+            }
+
+            .table-actions button {
+                padding: 5px 8px;
+                font-size: 0.75em;
+            }
+
+            .alert {
+                padding: 10px;
+                margin-bottom: 10px;
+                font-size: 0.9em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 5px;
+            }
+
+            header {
+                padding: 10px;
+                margin-bottom: 10px;
+            }
+
+            h1 {
+                font-size: 1.2em;
+            }
+
+            .subtitle {
+                font-size: 0.8em;
+            }
+
+            .panel {
+                padding: 10px;
+            }
+
+            .panel h2 {
+                font-size: 1em;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            input[type="number"],
+            select {
+                padding: 8px;
+                font-size: 14px;
+            }
+
+            button {
+                padding: 8px 10px;
+                font-size: 0.85em;
             }
 
             .button-group {
                 grid-template-columns: 1fr;
+                gap: 6px;
+            }
+
+            .btn-primary {
+                grid-column: 1;
+            }
+
+            table {
+                font-size: 0.75em;
+            }
+
+            th, td {
+                padding: 5px;
+            }
+
+            .table-actions {
+                flex-direction: column;
+                gap: 3px;
+            }
+
+            .table-actions button {
+                width: 100%;
+                padding: 4px 6px;
+                font-size: 0.65em;
+            }
+
+            .empty-state {
+                padding: 20px 10px;
+                font-size: 0.9em;
             }
         }
 
